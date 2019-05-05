@@ -2,7 +2,7 @@
 
 ARG BASE_TAG=1803
 
-FROM microsoft/windowsservercore:${BASE_TAG}
+FROM mcr.microsoft.com/windowsservercore:${BASE_TAG}
 
 SHELL ["powershell", "-command"]
 
