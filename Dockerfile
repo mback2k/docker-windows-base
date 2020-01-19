@@ -8,5 +8,5 @@ ENV DOCKER_ENTRYPOINT_DIR C:\ProgramData\docker-entrypoint.d
 ADD docker-entrypoint.ps1 C:\ProgramData\docker-entrypoint.ps1
 
 SHELL ["powershell", "-command"]
-ENTRYPOINT powershell -file C:\ProgramData\docker-entrypoint.ps1 --%
+ENTRYPOINT ["powershell", "-file", "C:\\ProgramData\\docker-entrypoint.ps1", "--%"]
 CMD ["powershell"]
